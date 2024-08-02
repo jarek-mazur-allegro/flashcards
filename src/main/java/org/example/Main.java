@@ -11,7 +11,7 @@ public class Main {
         PdfCreator pdfCreator = new PdfCreator();
         DocExtractor docExtractor = new DocExtractor();
         System.out.println(System.getProperty("user.dir"));
-        List<Map<String, String>> flashCardsList = docExtractor.extractLines("src/main/resources/exampleFile");
+        List<Map<String, String>> flashCardsList = docExtractor.extractLines("src/main/resources/exampleText.txt");
         pdfCreator.pdfCreator(flashCardsList);
     }
 }
